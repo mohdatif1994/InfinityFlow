@@ -37,6 +37,6 @@ jobs:
         run: |
           git config --global --add safe.directory $GITHUB_WORKSPACE
           for file in $(git diff-tree --no-commit-id --name-only -r 'origin/main..HEAD'); do
-            pre-commit --files $file
+            pre-commit run --files $file
           done
           
