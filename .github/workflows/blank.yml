@@ -37,7 +37,7 @@ jobs:
         run: |
           /usr/bin/git config --global --add safe.directory $GITHUB_WORKSPACE
           /usr/bin/git status
-          /usr/bin/git -V
+          /usr/bin/git -v
           /usr/bin/git branch
           for file in $(/usr/bin/git diff-tree --no-commit-id --name-only -r 'origin/main..HEAD'); do
             pre-commit run --files $file
