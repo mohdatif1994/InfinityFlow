@@ -36,6 +36,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           /usr/bin/git config --global --add safe.directory $GITHUB_WORKSPACE
+          git fetch --depth=1 origin main
           /usr/bin/git status
           /usr/bin/git -v
           /usr/bin/git branch
