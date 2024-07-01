@@ -1,7 +1,11 @@
+from __future__ import annotations
+
+
 class A:
-    ""
-    def __init__():
+    """"""
+
+    def __init__(self):
         pass
 
-    def fun():
+    def fun(self):
         return True
