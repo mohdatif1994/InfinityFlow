@@ -32,7 +32,7 @@ jobs:
       - name: Intall the pre-commit dependency.
         run: python3 -m pip install pre-commit
 
-      - name: Intall the pre-commit dependency.
+      - name: Intall the pylint dependency.
         run: python3 -m pip install pylint
 
       # Runs a set of commands using the runners shell
