@@ -73,3 +73,11 @@ repos:
     hooks:
     -   id: mypy
         additional_dependencies: [types-all]
+-   repo: local
+    hooks:
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        require_serial: true
