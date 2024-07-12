@@ -7,4 +7,6 @@
 # review when someone opens a pull request.
 *       @mohdatif1994
 
-/root @mohdatif1994
+/root/* @mohdatif1994
+
+/requirements/* @mohdatif1994 @TheHasanM
