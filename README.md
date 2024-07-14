@@ -90,7 +90,7 @@ This orchestration layer significantly enhances user interaction, providing a co
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
-The project is structured into five key phases as highlighted in the above Fig 1:
+# The project is structured into five key phases as highlighted in the above Fig 1:
 
     1. Host Environment Setup: Begin by establishing the host environment. This involves writing the necessary libraries and scripts to facilitate communication between the host, virtual machines, and containers.
 
