@@ -1,7 +1,6 @@
 # This Automation Framework developed to Learn the full E2E Automation. (Python Scripts, Github, Jenkins etc).
 
-![image](https://github.com/user-attachments/assets/a07fda81-41f4-4d60-97c0-00b9856bb767)
-
+![image](https://github.com/user-attachments/assets/a07fda81-41f4-4d60-97c0-00b9856bb767) Fig. 1
 
 The idea behind this project is to Automate whole procees so that all concept gets clear...
 
@@ -89,3 +88,17 @@ The UI, also referred to as the Web Page or Orchestrator, offers a user-friendly
 
 This orchestration layer significantly enhances user interaction, providing a comprehensive platform for operational efficiency.
 
+
+-------------------------------------------------------------------------------------------------------------------------------------
+The project is structured into five key phases as highlighted in the above Fig 1:
+
+    1. Host Environment Setup: Begin by establishing the host environment. This involves writing the necessary libraries and scripts to facilitate communication between the host, virtual machines, and containers.
+
+    2. GitHub and Jenkins Configuration: Next, configure GitHub to integrate with Jenkins, enabling seamless interaction between the two platforms.
+
+    3. Host Integration as a Jenkins Node: Integrate the host as a node within Jenkins, setting up triggers that activate automation whenever an action occurs in GitHub.
+
+    4. User Interface Development: Create a user-friendly web interface that allows users to interact with the automation framework effortlessly, providing a graphical means to initiate processes.
+
+    5. UI and Host Integration: Finally, link the user interface with the host, allowing users to trigger the automation framework directly from the web page.
+-------------------------------------------------------------------------------------------------------------------------------------
