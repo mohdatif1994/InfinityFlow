@@ -1,1 +1,1 @@
-"""This Folder is to have the tested Script which used the Libraries."""
+"""This folder contains examples of the libraries and details on how to use them."""

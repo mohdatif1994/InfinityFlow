@@ -18,7 +18,7 @@ class CommonTest(object):
     @classmethod
     def get_args(cls):
         parser = argparse.ArgumentParser(description="Process some arguments.")
-        parser.add_argument('--config', default="C:\AutoQaf\config.yaml", type=str, help='Config File Path')
+        parser.add_argument('--config', default="C:\InfinityFlow\config.yaml", type=str, help='Config File Path')
         args = parser.parse_args()
         return args
     
