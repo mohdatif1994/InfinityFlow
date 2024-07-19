@@ -1,7 +1,0 @@
-{
-    "files.autoSave": "afterDelay",
-    "workbench.editor.autoLockGroups": {
-        "workbench.editors.gettingStartedInput": true
-    },
-    "workbench.editor.customLabels.enabled": false
-}
