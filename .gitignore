@@ -16,3 +16,8 @@ _book
 *.pdf
 *.DSStore
 *.__pycache__/
+.vscode/
+*.txt
+*.DS_Store
+*.pyc
+*.log
