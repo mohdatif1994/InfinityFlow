@@ -1,0 +1,26 @@
+core:
+  logging:
+    path: "/Users/mohdatifkhan/Desktop/testing_branch/InfinityFlow/InfinityFlow/infinity_flow_logs"
+
+  services:
+    - name: ssh
+      instrument: os_ssh
+      os_type: Linux
+      sub_type: CentOS
+      ip: 10.10.10.10
+      users: root
+      password: password
+      port: 22
+
+    - name: ac
+      instrument: rasp_pi
+      ip: 11.11.11.11
+      user: root
+      password: password
+      port: 22
+
+
+    
+
+
+
