@@ -44,6 +44,8 @@ jobs:
           /usr/bin/git -v
           /usr/bin/git branch
           pwd
+          export PYTHON_PATH=/home/runner/work/InfinityFlow/InfinityFlow
+          echo $PYTHON_PATH
           for file in $(git diff-tree --no-commit-id --name-only -r 'origin/main..HEAD'); do
             pre-commit run --files $file
           done
