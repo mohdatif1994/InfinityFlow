@@ -1,4 +1,6 @@
+import os
 import logging
+from datetime import datetime
 
 class LoggerConfig:
     def __init__(self, name='my_logger', log_file='app.log', log_level=logging.DEBUG):
@@ -32,11 +34,23 @@ class LoggerConfig:
 
         return logger
 
-    @property
     def get_logger(self):
         if self.logger is None:
             self.logger = self._setup_logger()
         return self.logger
+    
+    @staticmethod
+    def get_logging_file(class_name, log_file_path):
+
+        folder_name = f"{class_name}{datetime.now().strftime('%Y%m%d_%H%M%S')}".upper()
+        if not os.path.exists(log_file_path):
+            os.mkdir(log_file_path)
+        
+        if not os.path.exists(os.path.join(log_file_path, folder_name)):
+            os.mkdir(os.path.join(log_file_path, folder_name))
+        
+        path = os.path.join(log_file_path, folder_name, 'infinity_flow.log')
+        return path 
     
 # Usage example
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 core:
   logging:
-    path: "/Users/mohdatifkhan/Desktop/testing_branch/InfinityFlow/InfinityFlow/infinity_flow_logs"
+    path: "/opt/Automation/nfinity_flow_logs"
 
   services:
     - name: ssh

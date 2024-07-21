@@ -1,4 +1,5 @@
 """This File facilitates the acquisition of configuration parameters from the yaml file."""
+
 import yaml
 from pathlib import Path
 from infinityflow.src.lib.core.exception import ConfigError
@@ -45,4 +46,6 @@ class Config:
         
         return loggign_tags
     
-    
+    @staticmethod
+    def get_logging_path(cfg):
+        return cfg['core']['logging']['path']
