@@ -1,7 +1,13 @@
+"""Host Info Lib"""
+from __future__ import annotations
+
 import platform
 import socket
 
+
 class HostInfo:
+    """Host Info Class."""
+
     @staticmethod
     def get_hostname():
         """
@@ -92,16 +98,17 @@ class HostInfo:
         :return: A dictionary containing the host information.
         """
         return {
-            'hostname': HostInfo.get_hostname(),
-            'ip_address': HostInfo.get_ip_address(),
-            'fqdn': HostInfo.get_fqdn(),
-            'os_name': HostInfo.get_os_name(),
-            'os_version': HostInfo.get_os_version(),
-            'os_release': HostInfo.get_os_release(),
-            'machine': HostInfo.get_machine(),
-            'processor': HostInfo.get_processor(),
-            'platform': HostInfo.get_platform()
+            "hostname": HostInfo.get_hostname(),
+            "ip_address": HostInfo.get_ip_address(),
+            "fqdn": HostInfo.get_fqdn(),
+            "os_name": HostInfo.get_os_name(),
+            "os_version": HostInfo.get_os_version(),
+            "os_release": HostInfo.get_os_release(),
+            "machine": HostInfo.get_machine(),
+            "processor": HostInfo.get_processor(),
+            "platform": HostInfo.get_platform(),
         }
+
 
 # Usage
 host_info = HostInfo.get_host_info()

@@ -1,16 +1,22 @@
+"""Constant Variables"""
+from __future__ import annotations
+
 from enum import Enum
+
+
 class Os(Enum):
-    Linux= 'linux'
-    Windows= 'windows'
-    Darwin= 'darwin'
+    """Os Type Enum"""
+
+    LINUX = "linux"
+    WINDOWS = "windows"
+    DARWIN = "darwin"
 
 
 class HostAttributes(Enum):
-    HostPath = {
-        Os.Linux.value: r'/opt/Automation',
-        Os.Windows.value: r'C:\Automation',
-        Os.Darwin.value: r'/opt/Automation'
+    """Host Attribute"""
+
+    HOST_PATH = {
+        Os.LINUX.value: r"/opt/Automation",
+        Os.WINDOWS.value: r"C:\Automation",
+        Os.DARWIN.value: r"/opt/Automation",
     }
-    
-
-

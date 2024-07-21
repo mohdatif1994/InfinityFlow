@@ -18,9 +18,3 @@ core:
       user: root
       password: password
       port: 22
-
-
-    
-
-
-
