@@ -6,8 +6,8 @@ import sys
 from infinityflow.src.lib.core.basetest import BaseTest
 
 
-class B(BaseTest):
-    """B Class"""
+class ExampleException(BaseTest):
+    """ExampleException Class"""
 
     def setup(self):
         """Setup"""
