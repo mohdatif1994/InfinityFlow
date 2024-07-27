@@ -48,6 +48,7 @@ jobs:
     - name: Analyze code with Pylint
       run: |
         source venv/bin/activate
-        pylint $(git ls-files '*.py')
+        /usr/bin/git config --global --add safe.directory $GITHUB_WORKSPACE
+        pylint $(/usr/bin/git ls-files '*.py')
         deactivate
       working-directory: ${{ github.workspace }} 
