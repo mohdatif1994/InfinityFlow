@@ -26,4 +26,4 @@ class ExampleBaseTestUsage(BaseTest):
 
 
 if __name__ == "__main__":
-    sys.exit(B.main(B))
+    sys.exit(ExampleBaseTestUsage.main(ExampleBaseTestUsage))
