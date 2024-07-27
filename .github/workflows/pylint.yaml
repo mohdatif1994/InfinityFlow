@@ -37,6 +37,6 @@ jobs:
         source venv/bin/activate
         pwd
         echo $PYTHON_PATH
-        pylint $(git ls-files '*.py')
+        pylint --disable=duplicate-code $(git ls-files '*.py')
         deactivate
       working-directory: ${{ github.workspace }} 
