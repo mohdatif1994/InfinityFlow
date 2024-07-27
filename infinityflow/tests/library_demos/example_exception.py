@@ -26,4 +26,4 @@ class ExampleException(BaseTest):
 
 
 if __name__ == "__main__":
-    sys.exit(B.main(B))
+    sys.exit(ExampleException.main(ExampleException))
