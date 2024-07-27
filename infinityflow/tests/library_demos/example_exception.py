@@ -6,8 +6,8 @@ import sys
 from infinityflow.src.lib.core.basetest import BaseTest
 
 
-class B(BaseTest):
-    """B Class"""
+class ExampleException(BaseTest):
+    """ExampleException Class"""
 
     def setup(self):
         """Setup"""
@@ -26,4 +26,4 @@ class B(BaseTest):
 
 
 if __name__ == "__main__":
-    sys.exit(B.main(B))
+    sys.exit(ExampleException.main(ExampleException))

@@ -6,7 +6,7 @@ import sys
 from infinityflow.src.lib.core.basetest import BaseTest
 
 
-class B(BaseTest):
+class ExampleBaseTestUsage(BaseTest):
     """Class to Test Base Test"""
 
     def setup(self):
@@ -26,4 +26,4 @@ class B(BaseTest):
 
 
 if __name__ == "__main__":
-    sys.exit(B.main(B))
+    sys.exit(ExampleBaseTestUsage.main(ExampleBaseTestUsage))

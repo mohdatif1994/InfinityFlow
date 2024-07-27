@@ -3,8 +3,10 @@ name: Python Syntax Code Quality Check Workflow
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+      
 
 jobs:
   pylint-check:
@@ -31,12 +33,26 @@ jobs:
         deactivate
       working-directory: ${{ github.workspace }}
 
+    - name: Set up dynamic project path
+      run: |
+        # Dynamically set the project path
+        export PROJECT_PATH="${{ github.workspace }}"
+        
+        # Add the project path to the PATH environment variable
+        echo "PROJECT_PATH=$PROJECT_PATH" >> $GITHUB_ENV
+        echo "PATH=$PROJECT_PATH:\$PATH" >> $GITHUB_ENV
+
+        PROJECT_PATH="${{ github.workspace }}"
+        echo "PROJECT_PATH=$PROJECT_PATH" >> $GITHUB_ENV
+        echo "PYTHONPATH=$PROJECT_PATH" >> $GITHUB_ENV
+
+    - name: Verify project path
+      run: echo $PROJECT_PATH
+
     - name: Analyze code with Pylint
       run: |
-        export PYTHON_PATH=/home/runner/work/InfinityFlow/InfinityFlow
         source venv/bin/activate
-        pwd
-        echo $PYTHON_PATH
-        pylint $(git ls-files '*.py')
+        /usr/bin/git config --global --add safe.directory $GITHUB_WORKSPACE
+        pylint --disable=duplicate-code $(/usr/bin/git ls-files '*.py')
         deactivate
       working-directory: ${{ github.workspace }} 
