@@ -102,3 +102,5 @@ This orchestration layer significantly enhances user interaction, providing a co
 
     5. UI and Host Integration: Finally, link the user interface with the host, allowing users to trigger the automation framework directly from the web page.
 -------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------  #Steps to Configure and Execute --------------------------------------------------
